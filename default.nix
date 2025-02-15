@@ -17,4 +17,5 @@ in
   agave = import ./agave { inherit pkgs lib stdenv; };
   spl = import ./spl { inherit pkgs lib stdenv; };
   anchor = import ./anchor { pkgs = overlayPkgs; inherit lib stdenv; };
+  weather-rs = import ./weather { inherit pkgs; };
 }
